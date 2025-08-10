@@ -44,41 +44,51 @@ export default function TubaPortfolio() {
       title: "PhysicsVerse - Virtual Physics Lab",
       description:
         "A web-based interactive lab for simulating real-time physics experiments with collaborative learning features, real-time communication using Socket.io, and classroom management tools.",
-      image: "/fyp.png",
+      image: "https://via.placeholder.com/500x300/ec4899/ffffff?text=PhysicsVerse",
       tags: ["React", "Node.js", "Socket.io", "MVC Architecture", "Physics Simulation"],
       type: "Final Year Project",
       liveUrl: "#",
-      githubUrl: "https://github.com/TubaJabeen123/fyp",  
+      githubUrl: "#",
     },
     {
       title: "Pizzerian - Pizza Shop Management",
       description:
         "Desktop application with complete CRUD operations, user authentication, cart management, and order processing system built with C# Windows Forms and SQL database.",
-      image: "/placeholder.svg?height=300&width=500&text=Pizzerian",
+      image: "https://via.placeholder.com/500x300/8b5cf6/ffffff?text=Pizzerian",
       tags: ["C#", "Windows Forms", "SQL", "CRUD Operations", "Desktop App"],
       type: "Desktop Application",
       liveUrl: "#",
-      githubUrl: "https://github.com/TubaJabeen123/Pizzerian",
+      githubUrl: "#",
     },
     {
-      title: "Style-shop",
+      title: "Airline Management System",
       description:
-        "Style-Shop is a simple e-commerce web application built using Node.js and Express.js. It features a dynamic product listing, shopping cart functionality, and a clean user interface to simulate a basic online shopping experience.",
-      image: "/styleShop.png",
-      tags: ["Node.js", "Express.js", "HTML", "CSS", "JavaScript"],
+        "Comprehensive airline management system implementing various data structures including linked lists, arrays, queues, and stacks for efficient flight and passenger management.",
+      image: "https://via.placeholder.com/500x300/3b82f6/ffffff?text=Airline+Management",
+      tags: ["C++", "Data Structures", "File Handling", "Algorithms", "System Design"],
       type: "Academic Project",
-      liveUrl: "https://e-commerce-shop-seven-flame.vercel.app/",
-      githubUrl: "https://github.com/TubaJabeen123/eCommerce-Shop",
+      liveUrl: "#",
+      githubUrl: "#",
+    },
+    {
+      title: "React Native Mobile Apps",
+      description:
+        "Collection of mobile applications including To-Do List, Contact List, Note App, and Recipe App with modern UI/UX design and cross-platform compatibility.",
+      image: "https://via.placeholder.com/500x300/10b981/ffffff?text=Mobile+Apps",
+      tags: ["React Native", "JavaScript", "JSX", "Mobile UI", "Cross-platform"],
+      type: "Mobile Development",
+      liveUrl: "#",
+      githubUrl: "#",
     },
     {
       title: "Web Development Projects",
       description:
-        "Various web applications including Resume website, To-Do List, and sign-up form built with modern web technologies and responsive design principles.",
-      image: "/webProject.png",
+        "Various web applications including Resume website, To-Do List, and Contact List built with modern web technologies and responsive design principles.",
+      image: "https://via.placeholder.com/500x300/f59e0b/ffffff?text=Web+Projects",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Laravel", "Responsive Design"],
       type: "Web Development",
-      liveUrl: "https://to-do-list-keb6.vercel.app/",
-      githubUrl: "https://github.com/TubaJabeen123/Simple-web-Projects",
+      liveUrl: "#",
+      githubUrl: "#",
     },
   ]
 
@@ -91,10 +101,10 @@ export default function TubaPortfolio() {
   const experience = [
     {
       title: "Web-App Developer Intern",
-      company: "PITB, Regional Plan 9 cohort2 ",
+      company: "PITB, Regional Plan 9 cohort2",
       period: "March 2025 - June 2025",
       description:
-        "developed and maintained web applications, collaborating with the development team to implement responsive designs and enhance user experience using modern web technologies including React, Next.js, and Node.js.",
+        "Developed and maintained web applications, collaborating with the development team to implement responsive designs and enhance user experience using modern web technologies including React, Next.js, and Node.js.",
       current: true,
     },
   ]
@@ -106,7 +116,7 @@ export default function TubaPortfolio() {
     "Techolic Certificate - Technology Awareness and Participation (2023)",
   ]
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
@@ -195,7 +205,7 @@ export default function TubaPortfolio() {
 
             {/* Mobile Navigation */}
             {isMenuOpen && (
-              <div className="md:hidden py-4 border-t border-rose-200/50 dark:border-slate-700/50 animate-in slide-in-from-top duration-200">
+              <div className="md:hidden py-4 border-t border-rose-200/50 dark:border-slate-700/50">
                 <div className="flex flex-col space-y-4">
                   <button
                     onClick={() => scrollToSection("home")}
@@ -237,10 +247,10 @@ export default function TubaPortfolio() {
         <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center py-20">
-              <div className="mb-8 animate-in fade-in duration-1000">
+              <div className="mb-8">
                 <div className="relative inline-block">
                   <Image
-                    src="/profilePic1.jpg"
+                    src="public\profilePic.jpg"
                     alt="Tuba Jabeen"
                     width={200}
                     height={200}
@@ -252,7 +262,7 @@ export default function TubaPortfolio() {
                 </div>
               </div>
 
-              <div className="animate-in slide-in-from-bottom duration-1000 delay-200">
+              <div>
                 <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mb-6">
                   Hi, I'm{" "}
                   <span className="bg-gradient-to-r from-rose-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
@@ -260,14 +270,14 @@ export default function TubaPortfolio() {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-4 max-w-3xl mx-auto">
-                  Web Developer & Fresh Computer Science Graduate
+                 Full-stack Software Engineer & Fresh Computer Science Graduate
                 </p>
                 <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
                   Passionate about creating innovative web solutions with a strong foundation in modern technologies
                 </p>
               </div>
 
-              <div className="animate-in slide-in-from-bottom duration-1000 delay-400">
+              <div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                   <Button
                     size="lg"
@@ -277,26 +287,25 @@ export default function TubaPortfolio() {
                     View My Work
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                <Button
-  size="lg"
-  variant="outline"
-  onClick={() => window.open('/resume.pdf', '_blank')}
-  className="border-2 hover:bg-rose-50 dark:hover:bg-slate-800 transform hover:scale-105 transition-all duration-200 bg-transparent"
->
-  <Download className="mr-2 h-5 w-5" />
-  View Resume
-</Button>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 hover:bg-rose-50 dark:hover:bg-slate-800 transform hover:scale-105 transition-all duration-200 bg-transparent"
+                  >
+                    <Download className="mr-2 h-5 w-5" />
+                    Download Resume
+                  </Button>
                 </div>
 
                 {/* Quick Stats */}
                 <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-600 dark:text-slate-400">
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-rose-500" />
-                    <span>Attock, Pakistan</span>
+                    <span>Islamabad, Pakistan</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Briefcase className="w-4 h-4 text-purple-500" />
-                    <span>Self-Employee</span>
+                    <span>self-employed</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Award className="w-4 h-4 text-indigo-500" />
@@ -334,7 +343,7 @@ export default function TubaPortfolio() {
                       <h3 className="font-semibold text-slate-900 dark:text-white">
                         Bachelor of Science in Computer Science
                       </h3>
-                      <p className="text-slate-600 dark:text-slate-300">COMSATS University Islamabad, Attock</p>
+                      <p className="text-slate-600 dark:text-slate-300">COMSATS University Islamabad</p>
                       <div className="flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
                         <span className="flex items-center gap-1">
                           <Calendar className="w-4 h-4" />
@@ -484,7 +493,7 @@ export default function TubaPortfolio() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">Experience</h2>
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-                Gained hands-on experience in web development
+                Currently gaining hands-on experience in web development
               </p>
             </div>
 
@@ -559,11 +568,11 @@ export default function TubaPortfolio() {
                       <Badge className="bg-white/90 text-slate-700 backdrop-blur-sm">{project.type}</Badge>
                     </div>
                     <div className="absolute bottom-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      {/* <Button size="sm" className="bg-white/90 text-slate-700 hover:bg-white backdrop-blur-sm" asChild>
+                      <Button size="sm" className="bg-white/90 text-slate-700 hover:bg-white backdrop-blur-sm" asChild>
                         <Link href={project.liveUrl}>
                           <ExternalLink className="h-4 w-4" />
                         </Link>
-                      </Button> */}
+                      </Button>
                       <Button size="sm" className="bg-white/90 text-slate-700 hover:bg-white backdrop-blur-sm" asChild>
                         <Link href={project.githubUrl}>
                           <Github className="h-4 w-4" />
@@ -637,7 +646,7 @@ export default function TubaPortfolio() {
                     <Phone className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-semibold text-slate-900 dark:text-white mb-2 text-lg">Phone</h3>
-                  <p className="text-slate-600 dark:text-slate-300">0334-5605064</p>
+                  <p className="text-slate-600 dark:text-slate-300">+92334-5605064</p>
                 </Card>
               </div>
 
@@ -664,7 +673,7 @@ export default function TubaPortfolio() {
               © 2024 Tuba Jabeen. Built with Next.js, React, and Tailwind CSS.
             </p>
             <p className="text-sm text-slate-500 dark:text-slate-400 mt-2">
-              Languages: English (Fluent) • Urdu (Native) • Punjabi
+              Languages: English (Fluent) • Urdu (Native) 
             </p>
           </div>
         </footer>
