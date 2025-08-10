@@ -5,7 +5,7 @@ A modern, responsive portfolio website built with Next.js, showcasing my journey
 ![alt text](image.png)
 
 ## 🚀 Live Demo
-
+https://portfolio-69sz.vercel.app/
 
 ## ✨ Features
 
