@@ -44,11 +44,11 @@ export default function TubaPortfolio() {
       title: "PhysicsVerse - Virtual Physics Lab",
       description:
         "A web-based interactive lab for simulating real-time physics experiments with collaborative learning features, real-time communication using Socket.io, and classroom management tools.",
-      image: "https://via.placeholder.com/500x300/ec4899/ffffff?text=PhysicsVerse",
+      image: "/fyp.png",
       tags: ["React", "Node.js", "Socket.io", "MVC Architecture", "Physics Simulation"],
       type: "Final Year Project",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/TubaJabeen123/fyp",
     },
     {
       title: "Pizzerian - Pizza Shop Management",
@@ -58,7 +58,7 @@ export default function TubaPortfolio() {
       tags: ["C#", "Windows Forms", "SQL", "CRUD Operations", "Desktop App"],
       type: "Desktop Application",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/TubaJabeen123/Pizzerian",
     },
     {
       title: "Airline Management System",
@@ -70,30 +70,40 @@ export default function TubaPortfolio() {
       liveUrl: "#",
       githubUrl: "#",
     },
+    // {
+    //   title: "React Native Mobile Apps",
+    //   description:
+    //     "Collection of mobile applications including To-Do List, Contact List, Note App, and Recipe App with modern UI/UX design and cross-platform compatibility.",
+    //   image: "https://via.placeholder.com/500x300/10b981/ffffff?text=Mobile+Apps",
+    //   tags: ["React Native", "JavaScript", "JSX", "Mobile UI", "Cross-platform"],
+    //   type: "Mobile Development",
+    //   liveUrl: "#",
+    //   githubUrl: "#",
+    // },
     {
-      title: "React Native Mobile Apps",
+ title: "Style Shop",
       description:
-        "Collection of mobile applications including To-Do List, Contact List, Note App, and Recipe App with modern UI/UX design and cross-platform compatibility.",
-      image: "https://via.placeholder.com/500x300/10b981/ffffff?text=Mobile+Apps",
-      tags: ["React Native", "JavaScript", "JSX", "Mobile UI", "Cross-platform"],
-      type: "Mobile Development",
+        "Style-Shop is a simple e-commerce web application built using Node.js and Express.js. It features a dynamic product listing, shopping cart functionality, and a clean user interface to simulate a basic online shopping experience.",
+      image: "/styleShop.png",
+      tags: ["HTML", "CSS", "JavaScript (Vanilla)", "Bootstrap", "npm" ,"Node.js", "Express.js", "Responsive Design"],
+      type: "Web App",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/TubaJabeen123/eCommerce-Shop",
     },
     {
       title: "Web Development Projects",
       description:
         "Various web applications including Resume website, To-Do List, and Contact List built with modern web technologies and responsive design principles.",
-      image: "https://via.placeholder.com/500x300/f59e0b/ffffff?text=Web+Projects",
+      image: "/webProject.png",
       tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Laravel", "Responsive Design"],
       type: "Web Development",
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/TubaJabeen123/Simple-web-Projects",
     },
   ]
 
   const skills = {
-    technical: ["JavaScript", "React", "Next.js", "Node.js", "C#", "C++", "Java", "HTML/CSS"],
+    technical: ["JavaScript", "React", "Next.js", "Node.js", "C#", "C++", "Java", "HTML/CSS", "JWT", "Express.js"],
     tools: ["Visual Studio Code", "GitHub", "Figma", "SQL Server", "Windows Forms"],
     soft: ["Communication", "Leadership", "Teamwork", "Time Management"],
   }
@@ -104,8 +114,8 @@ export default function TubaPortfolio() {
       company: "PITB, Regional Plan 9 cohort2",
       period: "March 2025 - June 2025",
       description:
-        "Developed and maintained web applications, collaborating with the development team to implement responsive designs and enhance user experience using modern web technologies including React, Next.js, and Node.js.",
-      current: true,
+        "During my internship, I developed and maintained web applications using React, Next.js, and Firebase to deliver responsive, scalable, and high-performance solutions. I built a full-featured e-commerce website that included product listings, a shopping cart, authentication, and real-time order tracking powered by Firebase. To enhance maintainability and speed up feature delivery, I implemented a modular front-end architecture by creating reusable UI components. I also integrated real-time database updates for seamless inventory and order status management. Working closely with cross-functional teams, I delivered pixel-perfect, responsive designs optimized for both desktop and mobile devices. Following Agile development practices, I actively participated in sprint planning, code reviews, and daily stand-ups to ensure timely and efficient project delivery.",
+      current: false,
     },
   ]
 
@@ -250,7 +260,7 @@ export default function TubaPortfolio() {
               <div className="mb-8">
                 <div className="relative inline-block">
                   <Image
-                    src="public\profilePic.jpg"
+                    src="\profilePic.jpg"
                     alt="Tuba Jabeen"
                     width={200}
                     height={200}
@@ -270,10 +280,10 @@ export default function TubaPortfolio() {
                   </span>
                 </h1>
                 <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-4 max-w-3xl mx-auto">
-                 Full-stack Software Engineer & Fresh Computer Science Graduate
+                 Full-stack Software Engineer
                 </p>
                 <p className="text-lg text-slate-500 dark:text-slate-400 mb-8 max-w-2xl mx-auto">
-                  Passionate about creating innovative web solutions with a strong foundation in modern technologies
+
                 </p>
               </div>
 
@@ -287,14 +297,17 @@ export default function TubaPortfolio() {
                     View My Work
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="border-2 hover:bg-rose-50 dark:hover:bg-slate-800 transform hover:scale-105 transition-all duration-200 bg-transparent"
-                  >
-                    <Download className="mr-2 h-5 w-5" />
-                    Download Resume
-                  </Button>
+                 <a href="/resume.pdf" download>
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-2 hover:bg-rose-50 dark:hover:bg-slate-800 transform hover:scale-105 transition-all duration-200 bg-transparent"
+  >
+    <Download className="mr-2 h-5 w-5" />
+    Download Resume
+  </Button>
+</a>
+
                 </div>
 
                 {/* Quick Stats */}
@@ -323,7 +336,8 @@ export default function TubaPortfolio() {
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">About Me</h2>
               <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-                Fresh Computer Science graduate with hands-on experience and a passion for web development
+         Motivated and detail-oriented Full-Stack Developer skilled in creating responsive, scalable, and user-focused applications. Proficient in React, Next.js, Firebase, Node.js, and MongoDB, with expertise in modular front-end development, real-time features, and secure authentication. Strong collaborator with proven problem-solving abilities, effective communication skills, and a commitment to delivering high-quality digital solutions.
+
               </p>
             </div>
 
